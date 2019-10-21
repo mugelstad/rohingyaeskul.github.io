@@ -80,8 +80,12 @@
         margin-left: 1%;
     }
 
-    .single-team .bio-paragraph {
-        height: 225px;
+    .single-team {
+
+    }
+
+    .single-team {
+        height: 605px;
     }
 }
 
@@ -157,7 +161,29 @@
     }
 }
 
+@media only screen and (min-width: 567px) and (max-width: 766px) {
+    .single-team {
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 566px) {
+    .single-team {
+        height: 500px;
+    }
+}
+
 
 /* Wide Mobile Layout: 480px. */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 565px) {
+    .single-team {
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 456px) and (max-width: 479px) {
+    .single-team {
+        height: 500px;
+    }
+}
