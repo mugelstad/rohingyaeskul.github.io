@@ -170,15 +170,6 @@ input:-webkit-autofill:focus {
 *Default Background Class
 **/
 
-.overlay:before,
-.sky-bg {
-    background: ##AEC33D;
-    background: -webkit-gradient(linear, left top, left bottom, from(#D6D26A), to(#63822A));
-    background: linear-gradient(to bottom, #75cbe7 0%, #138fc2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
-    color: #ffffff;
-}
-
 .opaque-bg {
     background-color: rgba(174, 195, 61, .125);
 }
@@ -334,7 +325,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area #primary-menu > ul > li > a {
-    background: none;
+    /*background: none;*/
     padding: 30px 15px;
     position: relative;
     border-top: 3px solid transparent;
@@ -572,28 +563,6 @@ input:-webkit-autofill:focus {
     margin-right: auto;
 }
 
-@media only screen and (max-width: 990px) {
-  .single-team {
-    max-width: 60%;
-
-  }
-}
-
-@media only screen and (max-width: 770px) {
-    .single-team {
-        min-height: 60%;
-    }
-
-    #primary-menu {
-        background-color: rgb(177, 194, 80, 100);   
-    }
-
-    .navbar-nav {
-        background-color: #ACBC51;
-    }
-}
-
-
 .single-team .team-photo {
     margin-bottom: 20px;
     padding-top: 20px;
@@ -684,7 +653,6 @@ input:-webkit-autofill:focus {
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
-
 
 #accordion .panel .panel-title a span:before,
 #accordion .panel .panel-title a span:after {
@@ -910,6 +878,7 @@ preloader
     border-radius: 10px;
 }
 
+/* Rohingya Community tabs */
 
 .nav-tabs li .active a,
 .nav-tabs li .active a:focus,
@@ -917,8 +886,6 @@ preloader
     background-color: rgb(99, 130, 42, .125);
     border: 1px solid rgb(99, 130, 42, .125);
 }
-
-/*rgb(174 ,195, 61, .5)*/
 
 #box-border {
     border: 5px solid #2A3C13;
@@ -932,11 +899,6 @@ preloader
     background-color: rgb(99, 130, 42, .25);
     border: 1px solid rgb(99, 130, 42, .125);
 }
-
-/*#primary-menu > ul > li > a:before {
-    border-top: 10px solid red;
-
-}*/
 
 .nav-link {
     margin: 5px;

@@ -20,7 +20,8 @@
         padding: 50px 15px;
     }
     .single-team {
-        margin-bottom: 30px
+        margin-bottom: 30px;
+        max-width: 60%;
     }
     .side-icon-boxes {
         display: -webkit-box;
@@ -57,7 +58,10 @@
         background-color: #ffffff;
     }
     .mainmenu-area #primary-menu {
-        background-color: #138FC2;
+        background: -webkit-gradient(linear, left top, left bottom, from(#63822A), to(#AEC33D));
+    }
+    .navbar-nav {
+        background: -webkit-gradient(linear, left top, left bottom, from(#63822A), to(#AEC33D));
     }
     .mainmenu-area #primary-menu ul {
         overflow-y: auto;
@@ -90,6 +94,9 @@
     }
     .mainmenu-area .logo {
         margin-left: 15px;
+    }
+    .single-team {
+        min-height: 60%;
     }
 }
 

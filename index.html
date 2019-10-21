@@ -492,7 +492,15 @@
     <script src="js/main.js"></script>
 
     <script>
+
         document.getElementById("default-open").click();
+
+        $("#primary-menu").click(function(){
+            $(this).attr("aria-expanded", "false");
+            $(this).toggleClass("in");
+        });
+        
+
     </script>
 </body>
 </html>
