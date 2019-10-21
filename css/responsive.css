@@ -1,6 +1,6 @@
 /* Medium Layout: 1280px. */
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) {
     #word-cloud {
         max-width: 30%;
         margin-bottom: 2%;
@@ -72,6 +72,46 @@
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+    }
+
+    #word-cloud {
+        max-width: 30%;
+        margin-bottom: 2%;
+        margin-left: 1%;
+    }
+
+    .single-team .bio-paragraph {
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        position: absolute;
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+        padding: 5px 5px;
+        background-color: #AEC33D;
+        font-size: small;
+    }
+
+    .single-team:hover .bio-paragraph {
+        bottom: 0;
+    }
+
+    .single-team:hover .team-photo img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+
+    .single-team {
+        background-color: #2A3C13;
+    }
+
+    .single-team h4 {
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .single-team h6 {
+        margin-bottom: 20px;
     }
 }
 
