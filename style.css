@@ -289,17 +289,17 @@ input:-webkit-autofill:focus {
 }
 
 .box .box-icon img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: grayscale(100%);*/
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border-radius: 10px;
 }
 
-.box:hover .box-icon img {
+/*.box:hover .box-icon img {
     -webkit-filter: grayscale(0);
     filter: grayscale(0)
-}
+}*/
 
 /**
 *Mainmenu-area
@@ -580,10 +580,17 @@ input:-webkit-autofill:focus {
 }
 
 @media only screen and (max-width: 770px) {
-  .single-team {
-    min-height: 60%;
-    
-  }
+    .single-team {
+        min-height: 60%;
+    }
+
+    #primary-menu {
+        background-color: rgb(177, 194, 80, 100);   
+    }
+
+    .navbar-nav {
+        background-color: #ACBC51;
+    }
 }
 
 
@@ -591,8 +598,7 @@ input:-webkit-autofill:focus {
     margin-bottom: 20px;
     padding-top: 20px;
     overflow: hidden;
-    
-  }
+}
 
 .team-photo {
     max-height: 200px;
