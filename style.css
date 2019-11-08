@@ -375,8 +375,11 @@ input:-webkit-autofill:focus {
 }
 
 .beginning-bg {
-   /* background: url('images/angle-bg.png') no-repeat scroll center bottom -120px / 100% auto;*/
-   background: -webkit-gradient(linear, left top, left bottom, from(#63822A), to(#AEC33D));
+    background: url('graphics/watercolor.jpeg') no-repeat scroll center bottom -120px / 100% auto;
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+   /*background: -webkit-gradient(linear, left top, left bottom, from(#63822A), to(#AEC33D));*/
 
 }
 
