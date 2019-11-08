@@ -375,11 +375,11 @@ input:-webkit-autofill:focus {
 }
 
 .beginning-bg {
-    background: url('graphics/watercolor.jpeg') no-repeat scroll center bottom -120px / 100% auto;
+    /*background: url('graphics/watercolor.jpeg') no-repeat scroll center bottom -120px / 100% auto;*/
     /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-   /*background: -webkit-gradient(linear, left top, left bottom, from(#63822A), to(#AEC33D));*/
+   /* filter: blur(8px);
+    -webkit-filter: blur(8px);*/
+   background: -webkit-gradient(linear, left top, left bottom, from(#63822A), to(#AEC33D));
 
 }
 
@@ -865,3 +865,8 @@ preloader
 .nav-link {
     margin: 5px;
 }
+
+/*#opening-paragraph {
+    color: #2A3C13;
+    font-size: 16px;
+}*/
