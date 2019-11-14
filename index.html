@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <!-- Main-Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -36,6 +36,29 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+
+    <script type="text/javascript">
+        var _userway_config = {
+            /* uncomment the following line to override default position*/
+            // position: '1', 
+            /* uncomment the following line to override default size (values: small, large)*/
+            size: 'small', 
+            /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+            /* language: 'en-US', */
+            /* uncomment the following line to override color set via widget */
+            /* color: '#2A3C13', 
+            /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
+            /* type: '1', */
+            /* uncomment the following lines to override the accessibility statement*/
+            statement_text: "Rohingya Eskul Accessibility Statement", 
+            statement_url: "www.rohingyaeskul.org/pages/accessibility",
+            /* uncomment the following line to override support on mobile devices*/
+            /* mobile: true, */
+            account: '4ALeOtguxg'
+        };
+    </script>
+    
+    <script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#primary-menu">
@@ -65,10 +88,10 @@
             <nav class="collapse navbar-collapse" id="primary-menu">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#home-page">Home</a></li>
-                    <li><a href="#who-page">Who We Are</a></li>
                     <li><a href="#community-page">Rohingya Community</a></li>
-                    <li><a href="#projects-page">Projects</a></li>
-                    <li><a href="#team-page">Team</a></li>
+                    <li><a href="#who-page">Who We Are</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="pages/team.html">Team</a></li>
                     <li><a href="#faq-page">FAQ</a></li>
                     <li><a href="#contact-page">Contact</a></li>
                 </ul>
@@ -81,7 +104,9 @@
 
     <!--Header-area-->
     <header class="header-area overlay full-height relative v-center" id="home-page">
-        <div class="absolute beginning-bg"></div>
+        <div class="absolute beginning-bg">
+            <img src="graphics/watercolor.jpeg" style="-webkit-filter: blur(10px);">
+        </div>
         <div class="container" style="width: 60%">
             <div class="row v-center">
                 <div class="col-xs-12 col-md-12 header-text" id="site-title-div">
@@ -94,65 +119,14 @@
                     <p id="opening-paragraph">Rohingya Eskul is an online platform founded on the belief in equal rights and opportunity. Our projects are designed specifically for the marginalised Rohingya communities; to be a part of the empowerment of youth in their cultural identity, the preservation of a valuable language, and the improvement of refugee access to education.</p>
                     
                 </div>
-                
             </div>
         </div>
     </header>
     <!--Header-area/-->
 
-
-   
-
-    <section class="light-green-bg section-padding" id="who-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h1 id="this-is-eskul">This is Eskul</h1>
-                        <h4><em>Eskul is the Rohingya word for "school" ~ pronounced 'es·kul' or alternatively read as 'e-school'.</em></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="graphics/collaboration.png" alt="Collaboration">
-                        </div>
-                        <br>
-                        <div>
-                            <h3>Our Values</h3>
-                            <p>Multiple perspectives, visions, and goals. Mutual respect and appreciation. We are always learning; from each other and for each other. Our commitment is to stay true to our values as we work to support and stand by the Rohingya community.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="graphics/vision.png" alt="">
-                        </div>
-                        <br>
-                        <h3>Community Vision</h3>
-                        <p>Our vision is for the preservation of the Rohingya language in its spoken and written forms. We want to be a part of a generation of Rohingya youth embracing the Rohingya language, cultural identity and heritage with pride.</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="graphics/mission.png" alt="">
-                        </div>
-                        <br>
-                        <h3>Rohingya Eskul Mission</h3>
-                        <p>Our mission is to promote Rohingya language learning. We strive to improve accessibility to education for the global Rohingya diaspora. We are here to push for education as a tool to amplify the powerful voices of a displaced generation.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="community-page" class="section opaque-bg section-padding">
+    <section id="community-page" class="section white-bg section-padding">
         <div>
-            <div class="container">
+            <div class="container" id="community">
                 <div class="page-title">
                         <h1 style="text-align: center;">The Rohingya Community</h1>
                     </div>
@@ -211,7 +185,6 @@
                             <div class="d-flex flex-column flex-lg-row">
                                 <div class="container">
                                     <div class="row">
-                                        <!-- <div class="col-xs-12 col-sm-6"> -->
                                         <div class="col-xs-11">
 
                                             <br>
@@ -228,200 +201,81 @@
                             </div>
                         </div>
                     </div>
+                </div> 
             </div>
         </div>
     </section>
 
-    <section class="section-padding brown-bg" id="projects-page">
-        <div class="container">
-            <div class="page-title" style="text-align: center;">
-                <h1>Projects</h1>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <div class="single-blog">
-                        <div class="blog-photo">
-                            <img src="graphics/lang-learn-mobile-app.png" alt="">
-                        </div>
+   <hr style="border: 3px solid #2A3C13; margin: 0">
 
-                        <br>
-
-                        <div class="blog-content">
-                            <h3><a href="#">Language Learning App</a></h3>
-                            
-                            <a href="#">Mobile-ready!</a>
-                            
-                            <p>We are creating a mobile app for Rohingya users to learn literacy in both Rohingya and English. We hope for users of any educational background to be able to access language learning of their mother tongue and English.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="single-blog">
-                        <div class="blog-photo">
-                            <img src="graphics/audio-dictionary.png" alt="">
-                        </div>
-
-                        <br>
-
-                        <div class="blog-content">
-                            <h3><a href="#">Audio Dictionary</a></h3>
-                        <a href="#">Instant translation!</a>
-                        <br/>
-                            
-                            <p>We are creating a database for a comprehensive written and audio English-Rohingya dictionary.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="single-blog">
-                        <div class="blog-photo">
-                            <img src="graphics/classroom-resources.png" alt="">
-                        </div>
-
-                        <br>
-
-                        <div class="blog-content">
-                            <h3><a href="#">Classroom Resources</a></h3>
-                   
-                            <a href="#">A little help for teachers!</a>
-                            <br/>
-                           
-                            <p>We are creating downloadable flashcards and other classroom resources that are bilingual in English and Rohingya. If you are a teacher looking for a specific kind of content then please do contact us!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-padding opaque-bg" id="team-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h1>Meet Our Team</h1>
-                        <h4>Over the last two years, our team members have all crossed paths in a Rohingya refugee school in Johor Bahru, Malaysia. Although by now many of us have physically parted ways, we share the same passion and compassion for the community that brought us together!</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
-                    <div class="single-team">
-                        <div class="team-photo">
-                            <img src="profile-photos/laima.jpg" alt="Laima Selivanova">
-                        </div>
-                        <h4>Laima</h4>
-                        <h4>Selivanova</h4>
-                        <div class="bio-paragraph">
-                            <p><i>"As an immigrant in Sweden learning side by side with refugees, I really appreciate and understand the need for modern ways to learn and teach languages."</i></p>
-                        </div>
-                    </div>
-
-                    <div class="linkedin">
-                        <a href="https://www.linkedin.com/"> <img src="graphics/linkedin-logo.png"/></a>
-                    </div>
-
-                </div>
-                
-
-                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
-                    <div class="single-team">
-                        <div class="team-photo">
-                            <img src="profile-photos/aayesha.jpg" alt="Aayesha Fazal">
-                        </div>
-                        <h4>Aayesha</h4>
-                        <h4>Fazal</h4>
-
-                        <div class="bio-paragraph">
-                            <p><i>"The idea for Rohingya Eskul was born from Rohingya youth who wanted to see themselves recognised for their identities and potential."</i></p>
-                        </div>
-                    </div>
-
-                    <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/aayesha-fazal/"> <img src="graphics/linkedin-logo.png"/></a>
+    <section class="green-bg section-padding" id="who-page">
+        <div>
+            <div class="container" id="who-container">
+                <div class="row who-row">
+                    <div class="page-title col-sm-12" id="who-title">
+                        <h1 id="this-is-eskul">This is Eskul</h1>
+                        <h4><em>Eskul is the Rohingya word for "school" ~ pronounced 'es·kul' or alternatively read as 'e-school'.</em></h4>
                     </div>
                 </div>
 
-                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
-                    <div class="single-team">
-                        <div class="team-photo">
-                            <img src="profile-photos/zaid.jpg" alt="Zaid Hussin Toyub">
-                        </div>
-                        <h4>Zaid Hussin</h4>
-                        <h4>Toyub</h4>
-                        <div class="bio-paragraph">
-                            <p><i>"As a Rohingya refugee, my aim is to spread knowledge in my community and work for every Rohingya to have access to learning."</i></p>
+                <div class="row who-row">
+                   <div class="col-sm-3">
+
+                        <div class="box">
+                            <img src="graphics/collaboration.png" alt="Collaboration">
                         </div>
                     </div>
 
-                     <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/zaid-toyub/"> <img src="graphics/linkedin-logo.png"/></a>
+                    <div class="col-sm-9">
+                        <div>
+                            <div class="who-content">
+                                <h3>Our Values</h3>
+                                <p class="who-paragraph">Multiple perspectives, visions, and goals. Mutual respect and appreciation. We are always learning; from each other and for each other. Our commitment is to stay true to our values as we work to support and stand by the Rohingya community.</p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
+                <div class="row who-row">
+                    <div class="col-sm-3">
 
-                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
-                    <div class="single-team">
-                        <div class="team-photo">
-                           <img src="profile-photos/bilal.jpg" alt="Bilal Fazal">
-                        </div>
-                        <h4>Bilal</h4>
-                        <h4>Fazal</h4>
-                        <div class="bio-paragraph">
-                            <p><i>"Learning is about identity, growth and leading yourself into the future. We want to give people the tools to take on challenges themselves."</i></p>
+                        <div class="box">
+                            <img src="graphics/vision.png" alt="Vision">
                         </div>
                     </div>
 
-                     <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/bilal-fazal/"> <img src="graphics/linkedin-logo.png"/></a>
+                    <div class="col-sm-9">
+                        <div>
+                            <div class="who-content">
+                                <h3>Community Vision</h3>
+                                <p class="who-paragraph">Our vision is for the preservation of the Rohingya language in its spoken and written forms. We want to be a part of a generation of Rohingya youth embracing the Rohingya language, cultural identity and heritage with pride.</p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
-                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
-                    <div class="single-team">
-                        <div class="team-photo">
-                            <img src="profile-photos/maggie.jpg" alt="Maggie Ugelstad">
-                        </div>
-                        <h4>Maggie</h4>
-                        <h4>Ugelstad</h4>
-                        <div class="bio-paragraph">
-                            <p><i>"I admire the community of Rohingya; people are constantly helping each other and going out of their way to spread their knowledge to one another."</i></p>
+                <div class="row who-row">
+                    <div class="col-sm-3">
+                        <div class="box">
+                            <img src="graphics/mission.png" alt="Mission">
                         </div>
                     </div>
 
-                     <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/maggie-ugelstad-638a46132/"> <img src="graphics/linkedin-logo.png"/></a>
-                    </div>
-
-                </div>
-
-                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
-                    <div class="single-team">
-                        <div class="team-photo">
-                            <img src="profile-photos/abdulrahman.jpg" alt="AbdulRahman AlNaseri">
+                    <div class="col-sm-9">
+                        <div class="who-content">
+                            <h3>Rohingya Eskul Mission</h3>
+                            <p class="who-paragraph">Our mission is to promote Rohingya language learning. We strive to improve accessibility to education for the global Rohingya diaspora. We are here to push for education as a tool to amplify the powerful voices of a displaced generation.</p>
                         </div>
-                        <h4>AbdulRahman</h4>
-                        <h4>AlNaseri</h4>
-                        <div class="bio-paragraph">
-                            <p><i>"I believe that the way to bridge the gap between high and low resourced groups is to use accessible tech-based learning."</i></p>
-                        </div>
-                    </div>
 
-                     <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/abdulrahman-alnaseri-117098132/"> <img src="graphics/linkedin-logo.png"/></a>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-
-
-    <section class="yellow-bg section-padding" id="faq-page">
+    <hr style="border: 3px solid #2A3C13; margin: 0">
+    
+    <section class="white-bg section-padding" id="faq-page">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -459,6 +313,33 @@
                                 <p>The Rohingya Eskul team was formed in Malaysia, with members currently based internationally; in Singapore, Malaysia, Sweden, and the United States.</p>
                             </div>
                         </div>
+
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Is Rohingya Eskul a non-profit organisation?</a>
+                            </h4>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <p>Rohingya Eskul is not yet a registered company. We are pursuing our projects and mission with the resources available to us as a team. We operate with the intention of registering and running as a non-profit organisation.</p>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">How are Rohingya Eskul projects financed?</a>
+                            </h4>
+                            <div id="collapse5" class="panel-collapse collapse">
+                                <p>We are currently self-financed, and are pursuing means of fundraising as well as sponsorship partnerships.</p>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">How can I support Rohingya Eskul?</a>
+                            </h4>
+                            <div id="collapse6" class="panel-collapse collapse">
+                                <p>We appreciate any and all forms of support! You can get in touch about financial donations or sponsorships, and can also help spread the word about Rohingya Eskul to friends, family and colleagues and share our pages and posts on Facebook and LinkedIn.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -468,24 +349,26 @@
 
    
     <footer class="footer-area relative" id="contact-page">
-        <div class="absolute footer-bg"></div>
+        <div class="absolute footer-bg">
+            <img src="graphics/watercolor.jpeg" style="-webkit-filter: blur(10px);">
+        </div>
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                        <div class="page-title">
+                        <div class="page-title" id="connect">
                             <h1>Connect with us</h1>
                             <p>The best way to contact us is through email!</p>
 
                             <p>
-                                <strong>E-mail: </strong>
-                                    <a href="mailto:hallo@rohingyaeskul.org" style="color: white; text-decoration: underline;">hallo@rohingyaeskul.org</a> 
-                                <br/>
+                                <strong>E-mail: </strong><a href="mailto:hallo@rohingyaeskul.org" style="color: white; text-decoration: underline;">hallo@rohingyaeskul.org</a>
                             </p>
+
+                            <div>
+                                <p>Copywrite Rohingya Eskul 2019</p>
+                            </div>
+                            
                         </div>
                     </div>
-
-                    <div class="col-xs-12 text-center">
-                    <p>Parts of this website were made using <a  style="color: white;" href="https://colorlib.com">Colorlib</a></p>
                 </div>
             </div>
     </footer>
