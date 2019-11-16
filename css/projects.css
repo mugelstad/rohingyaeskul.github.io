@@ -329,3 +329,7 @@ input:-webkit-autofill:focus {
     display: inline-block;
     vertical-align: middle;
 }
+
+.instagram-link {
+    color: #63822A;
+}
