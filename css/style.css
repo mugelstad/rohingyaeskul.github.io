@@ -1,0 +1,436 @@
+
+/************
+ Google font
+************/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+/******
+ Theme 
+******/
+
+a {
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    color: #333333;
+}
+
+input:focus,
+button:focus,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    /*line-height: 1.8;*/
+    color: #515656;
+}
+
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/**
+*Helper-Classes
+**/
+
+.full-height {
+    width: 100%;
+    height: 100vh;
+}
+
+.relative {
+    position: relative;
+}
+
+.fixed,
+.absolute {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.v-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.social-menu {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.social-menu li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.social-menu li a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 2.5em;
+    background-color: #AEC33D;
+    color: #A6893C;
+    border-radius: 100px;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+}
+
+.social-menu li a:hover {
+    background-color: #AEC33D;
+    color: #ffffff;
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+/**
+*Default Background Class
+**/
+
+.white-bg {
+    background-color: #ffffff;
+}
+
+.green-bg {
+    background-color: rgba(99, 130, 42, .125);
+}
+
+/**
+*Page title
+**/
+
+.page-title {
+    margin-bottom: 60px;
+}
+
+.page-title h1 {
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.page-title h1:after {
+    content: "\e675";
+    font-family: 'themify';
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+}
+
+/**
+*Mainmenu-area
+**/
+
+.mainmenu-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.overlay,
+.overlay a,
+.mainmenu-area a {
+    color: #ffffff;
+}
+
+.mainmenu-area .logo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: inherit;
+    margin-top: 8px;
+    padding-left: 0;
+}
+
+.mainmenu-area .logo h2 {
+    margin-bottom: 0;
+}
+
+.mainmenu-area #primary-menu > ul > li > a {
+    /*background: none;*/
+    padding: 30px 15px;
+    position: relative;
+    border-top: 3px solid transparent;
+    text-align: center;
+}
+
+.mainmenu-area #primary-menu > ul > li > a:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.mainmenu-area #primary-menu > ul > li > a:hover:before,
+.mainmenu-area #primary-menu > ul > li.active > a:before {
+    opacity: 1;
+    top: 0;
+}
+
+.mainmenu-area #primary-menu ul li.active a,
+.mainmenu-area #primary-menu ul li a:hover {
+    border-top: 3px solid #ffffff;
+}
+
+.mainmenu-area.affix {
+    background-color: #2A3C13;
+    border-bottom: 3px solid #ffffff;
+}
+
+/***
+*Team-Section
+***/
+
+.single-team {
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #515656;
+    text-align: center;
+    position: relative;
+    -webkit-box-shadow: 0 5px 30px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 30px -10px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+
+.single-team:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
+}
+
+.single-team {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.single-team .team-photo {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.team-photo {
+    max-height: 200px;
+}
+
+.single-team .team-photo img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.page-title {
+    text-align: center;
+}
+
+/**********
+ Main Page
+**********/
+
+#opening-paragraph {
+    color: #2A3C13;
+    font-weight: 900;
+    text-align: center;
+}
+
+#community {
+    background-color: #D9E0AA;
+    border: 5px solid #2A3C13;
+    padding: 20px;
+}
+
+.nav-link {
+    background-color: rgba(99, 130, 42, .5); /*#63822A*/
+    margin: 3px;
+}
+
+.green-bg {
+    background-color: #D9E0AA;
+}
+
+.who-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px;
+}
+
+#who-title {
+    color: white;
+    text-shadow:
+        -1px -1px 0 #2A3C13,
+        1px -1px 0 #2A3C13,
+        -1px 1px 0 #2A3C13,
+        1px 1px 0 #2A3C13;
+}
+
+.who-content {
+    background-color: #ffffff;
+    border: 5px solid #2A3C13;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.box {
+    -webkit-box-shadow: 0 0 0 0 #ffffff;
+    box-shadow: 0 0 0 0 #ffffff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 5px solid #2A3C13;
+    background-color: #ffffff;
+    width: 80%;
+}
+
+.box:hover {
+    -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+#connect {
+    padding: 20px;
+    font-weight: 500;
+}
+
+
+/***********************
+ Accordion - FAQ
+ Parts made by Colorlib
+***********************/
+
+#accordion .panel {
+    background: none;
+    border: 5px solid #2A3C13;
+    margin: 10px;
+    padding: 30px 0 30px 80px;
+    position: relative;
+    background-color: #D9E0AA;
+}
+
+#accordion .panel h4 {
+    font-size: 1.25em;
+}
+
+.panel-collapse p{
+    font-size: 1em; 
+    padding: 10px 10px 0 0;
+}
+
+#accordion .panel .panel-collapse {
+    padding-left: 0 30px 0 60px;
+}
+
+#accordion .panel .panel-title a span:after,
+#accordion .panel .panel-title a span:before,
+#accordion .panel .panel-title a span {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    width: 36px;
+    height: 36px;
+    background: #35451D;
+    border-radius: 50%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#accordion .panel .panel-title a span:before,
+#accordion .panel .panel-title a span:after {
+    width: 10px;
+    height: 1px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%)
+}
+
+#accordion .panel .panel-title a span:before {
+    -webkit-transform: translate(-50%) rotate(90deg);
+    transform: translate(-50%) rotate(90deg)
+}
+
+#accordion .panel .panel-title a[aria-expanded="true"] span:before {
+    -webkit-transform: translate(-50%) rotate(0deg);
+    transform: translate(-50%) rotate(0deg)
+}
+
